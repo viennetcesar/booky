@@ -102,6 +102,7 @@ input::placeholder {
   height: 49px;
   border-radius: 15px;
   background-color: #0065fc;
+  display: none;
 }
 
 .bouton-rechercher {
@@ -289,5 +290,19 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .bouton-rechercher{
+    display: none;
+  }
+  .loupe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 15px;
+    background-color: #0065fc;
+    box-shadow: 0px 5px 3px #deebff;
+  }
   /* ... */
 }
