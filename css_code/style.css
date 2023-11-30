@@ -11,27 +11,28 @@ body{
 }
 */
 
-
-
 * {
   font-family: "Raleway", sans-serif;
 }
 
-header {
+.entete{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 0px;
 }
 
 .logo-header {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   height: 79px;
   width: 161px;
+  margin-left: 0px;
 }
 
 .logo {
-  padding: 30px 50px 30px 50px;
+  padding: 25px 25px 25px 0px;
 }
 
 .navigation {
@@ -66,6 +67,9 @@ header {
 .partie-recherche {
   display: flex;
   flex-direction: row;
+  /*border: 2px solid pink;*/
+  margin-top: 15px;
+  margin-bottom: 35px;
 }
 
 .rectangle-plan {
@@ -78,7 +82,6 @@ header {
   background-color: #f2f2f2;
   border-radius: 15px 0px 0px 15px;
 }
-
 
 input::placeholder {
   color: black;
@@ -93,7 +96,7 @@ input::placeholder {
   border: thin solid #f2f2f2;
 }
 
-.loupe{
+.loupe {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -122,26 +125,116 @@ form {
   /*flexibiliser les éléments pour pouvoir les coller sans espace entre eux*/
 }
 
-
-
-
 /****************************filtres CSS******************************/
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
-} 
-
+}
 
 .fa-solid {
   color: var(--main-color);
 }
 /****************************filtres CSS*******************************/
 
+/*************************** Barre de filtres *************************/
+
+.recherche_et_filtres {
+  display: flex;
+  flex-direction: column;
+}
 
 
+.conteneur-parent-filtres {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 800px;
+  height: 50px;
+  /*border: 2px solid blue;*/
+  margin: 0px;
+  margin-bottom: 35px;
+}
+
+.filter-boutons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fil {
+  font-weight: bold;
+  font-size: 18px;
+  /*border: 2px solid black;*/
+  width: 54px;
+  height: 21px;
+  margin-right: 10px;
+}
+
+.economique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px; /*la valeur sur la maquette est 25px mais pas ressemblant*/
+  border: 3px solid #f2f2f2;
+  margin-left: 9px;
+  margin-right: 9px;
+}
 
 
+.familial {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  border: 3px solid #f2f2f2;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+
+.romantique {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  border: 3px solid #f2f2f2;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+
+.nos-pepites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  border: 3px solid #f2f2f2;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.bouton:hover{
+  background-color: #deebff;
+}
+
+.ecriture-bouton {
+  font-size: 17px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+.icones-filtres{
+  padding-left: 16px;
+  padding-right: 6px;
+}
+
+/**********************************************************************/
 
 body {
   display: flex;
@@ -251,6 +344,31 @@ a {
   margin-bottom: 5px;
 }
 
+
+.conteneur-infobar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 24px;
+  margin-bottom: 35px;
+}
+
+.info{
+  /*j'élimine le padding de base d'un paragraphe ainsi que le margin de base crée entre <p> et le conteneur flex*/
+  padding: 0px;
+  margin: 0px;
+  margin-left: 4px;
+}
+
+.info-bulle{
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 0px;
+  margin-right: 3px;
+  
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -290,10 +408,10 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .bouton-rechercher{
+  .bouton-rechercher {
     display: none;
   }
-  .loupe{
+  .loupe {
     display: flex;
     flex-direction: row;
     justify-content: center;

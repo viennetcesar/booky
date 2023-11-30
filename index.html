@@ -34,31 +34,72 @@
       </header>
       <main>
         <section class="trouvez-votre-hebergement">
-         
-            <h1 class="titre-trouvez-votre-hebergement">
-              Trouvez votre hébergement pour des vacances de rêve
-            </h1>
-            <p class="ville-nature">
-              En plein centre-ville ou en pleine nature
-            </p>
-          <div class="partie-recherche">
-            <div class="rectangle-plan">
-              <i class="fa-solid fa-location-dot" style="color: black;"></i>
-            </div>
-            <form method="get" action="">
-              <input
-                class="champ-recherche"
-                type="text"
-                name="recherche"
-                placeholder="Marseille, France"
-              />
-              <div class="loupe">
-              <i class="fa-solid fa-magnifying-glass" style="color: white;"></i>
-            </div>
-              <button class="bouton-rechercher">Rechercher</button>
-            </form>
-          </div>
+          <h1 class="titre-trouvez-votre-hebergement">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="ville-nature">En plein centre-ville ou en pleine nature</p>
         </section>
+
+        <section class="recherche_et_filtres">
+          <div class="conteneur-recherche">
+            <div class="partie-recherche">
+              <div class="rectangle-plan">
+                <i class="fa-solid fa-location-dot" style="color: black"></i>
+              </div>
+              <form method="get" action="">
+                <input
+                  class="champ-recherche"
+                  type="text"
+                  name="recherche"
+                  placeholder="Marseille, France"
+                />
+                <div class="loupe">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="color: white"
+                  ></i>
+                </div>
+                <button class="bouton-rechercher">Rechercher</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="conteneur-parent-filtres">
+            <div class="filtre-titre"><h1 class="fil">Filtres</h1></div>
+            <div class="filter-boutons">
+              <div class="bouton economique">
+                <i class="fa-solid fa-money-bill-wave icones-filtres"></i>
+
+                <p class="ecriture-bouton">Économique</p>
+              </div>
+
+              <div class="bouton familial">
+                <i class="fa-solid fa-person icones-filtres"></i>
+
+                <p class="ecriture-bouton">Familial</p>
+              </div>
+
+              <div class="bouton romantique">
+                <i class="fa-solid fa-heart icones-filtres"></i>
+
+                <p class="ecriture-bouton">Romantique</p>
+              </div>
+
+              <div class="bouton nos-pepites">
+                <i class="fa-sharp fa-solid fa-fire icones-filtres"></i>
+
+                <p class="ecriture-bouton">Nos pépites</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="conteneur-infobar">
+            <i class="fa-solid fa-circle-info info-bulle fa-xl"></i>
+              <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        
+        </section>
+
         <div class="hebergements-and-populaires">
           <section class="hebergements">
             <h1>hébergement</h1>
