@@ -296,10 +296,70 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-  width: 65%;
+  display: flex;
+  flex-direction: column;
+  width: 871px;
+  height: 614px;
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  border: 2px solid blue;
 }
 
-/****** Populaires ***********/
+.hebergements-titre{
+  margin-left: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.division-cartes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /***********************je me suis arrêté ici***********/
+  justify-content: space-around;
+  margin-bottom: 80px;
+  border: 2px solid red;
+  border-radius: 15px;
+
+}
+
+
+.boite-carte{
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+  width: 250px;
+  height: 207px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.boite-carte img {
+  height: 90px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.conteneur-carte{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+/*pause à cet endroit là*/
+
+
+
+.afficher-plus{
+  font-style: 18px;
+  font-weight: Bold;
+  margin-left: 25px;
+}
+
+/*********************************************** Populaires *******************************************************/
 .populaires {
   width: 32%;
 }
@@ -343,6 +403,11 @@ a {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
+
+/********************************* fin section populaires *******************************************/
+
+
+
 
 
 .conteneur-infobar{
