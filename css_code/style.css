@@ -265,6 +265,10 @@ a {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.card:hover{
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1);
+}
+
 .card img {
   object-fit: cover;
 }
@@ -281,10 +285,30 @@ a {
   color: var(--main-bg-color);
 }
 
+/************************************ MEGA CONTENEUR hébergements-et-populaires *****************************/
+
+
+.conteneur-hebergements-et-populaires{
+  /*border: 2px solid orange;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+/************************************ MEGA CONTENEUR hébergements-et-populaires *****************************/
+
+
+
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  width: 1340px;
+  height: 614px;
 }
 
 .hebergements-and-populaires section {
@@ -298,12 +322,13 @@ a {
 .hebergements {
   display: flex;
   flex-direction: column;
-  width: 871px;
+  width: 871px; /*871 px sur figma, 900px réajusté*/
   height: 614px;
   background-color: #f2f2f2;
-  margin-bottom: 50px;
+ 
   margin-left: 0px;
-  border: 2px solid blue;
+  /*border: 2px solid blue;*/
+  border-radius: 15px;
 }
 
 .hebergements-titre{
@@ -315,11 +340,13 @@ a {
 .division-cartes{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /***********************je me suis arrêté ici***********/
+  flex-wrap: wrap; 
   justify-content: space-around;
-  margin-bottom: 80px;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   border-radius: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;;
 
 }
 
@@ -327,29 +354,67 @@ a {
 .boite-carte{
   display: flex;
   flex-direction: column;
-  border: solid 2px black;
+  /*border: solid 2px black;*/
   width: 250px;
   height: 207px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 10px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.boite-carte:hover{
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.1) ;
+}
+
+
 .boite-carte img {
-  height: 90px;
+  height: 124px;
   width: 100%;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+
 }
 
 .conteneur-carte{
   display: flex;
   flex-direction: column;
+  height: 64px;
   width: 100%;
+
+}
+
+
+.carte-texte{
+  display: flex;
+  flex-direction: column;
   
 }
 
-/*pause à cet endroit là*/
+.titre-h2-carte{
+  margin: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.paragraphe-carte{
+  font-size: 14px;
+  margin: 0px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.carte-notes{
+  display: flex;
+  height:  20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
 
 
@@ -357,33 +422,71 @@ a {
   font-style: 18px;
   font-weight: Bold;
   margin-left: 25px;
+  margin-bottom: 5px;;
+
 }
 
 /*********************************************** Populaires *******************************************************/
 .populaires {
-  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 429px;
+  height: 614px;
+  /*border: 2px solid greenyellow;*/
+  background-color: #f2f2f2;
+  border-radius: 15px;
 }
 
 .populaires-title {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  /*border: 2px solid aqua;*/
+  width: 429px;
+ 
+}
+
+.section-title{
+  margin-top: 17px;
+  margin-left: 25px;
+}
+
+.graphique{
+  margin-top: 22px;
+  margin-right: 25px;
+}
+
+.populaires-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  width: 369px;
+  height: 498px;
+  /*border: 2px solid blue;*/
+  padding: 2px;
+  margin: 20px;
 }
 
 .populaires-cards .card {
   display: flex;
-  margin-top: 33px;
+  margin-top: 25px;
+  width: 369px;
+  height: 146px;
+  
 }
 
 .populaires-cards img {
   width: 33%;
-  height: 136px;
+  height: 146px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
   width: 67%;
+  height: 146px;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
@@ -401,7 +504,7 @@ a {
 }
 
 .populaires-cards .card-rating {
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 /********************************* fin section populaires *******************************************/
