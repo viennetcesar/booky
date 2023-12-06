@@ -27,10 +27,12 @@
         <div class="logo-header">
           <img class="logo" src="images/logo/Booki.png" />
         </div>
+       
         <nav class="navigation">
-          <a class="lien-hebergements" href="#">Hébergements</a>
-          <a class="lien-activites" href="#">Activités</a>
+          <a class="lien-hebergements" href="#heb">Hébergements</a>
+          <a class="lien-activites" href="#act">Activités</a> <!--à relier à la section Activités à Marseille-->
         </nav>
+ 
       </header>
       <main>
         <section class="trouvez-votre-hebergement">
@@ -104,7 +106,7 @@
 
 <!-----------------------------------------------partie cards hébergements------------------------------------------------>
 <section class="conteneur-hebergements-et-populaires">
-          <section class="hebergements">      
+          <section id="heb" class="hebergements">      
             <div class="hebergements-and-populaires">
           
             <h1 class="hebergements-titre">Hébergements à Marseille</h1>
@@ -345,7 +347,39 @@
             </div>
           </section>
         </section>
+
+<!----------------------------------------- section activités à Marseille ---------------------------------------------->
+
+        <section id="act" class="conteneur-activites-a-marseille">
+          <h1 class="titre-activites-a-marseille">Activités à Marseille</h1>
+
+          <div class="conteneur-photos-marseille">
+
+          <article class="carte-photo-marseille">
+          <img src="images/activites/reno-laithienne.jpg" alt="Image du Vieux Port de Marseille">
+          <h2 class="titre-carte-marseille">Vieux-Port</h2>
+        </article>
+
+        <article class="carte-photo-marseille">
+          <img src="images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
+          <h2 class="titre-carte-marseille">Fort de Pomègues</h2>
+        </article>
+        
+        <article class="carte-photo-marseille">
+          <img src="images/activites/kilyan-sockalingum.jpg" alt="Image du parc national des Calanques">
+          <h2 class="titre-carte-marseille">Parc national des Calanques</h2>
+        </article>
+        
+        <article class="carte-photo-marseille">
+          <img src="images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
+          <h2 class="titre-carte-marseille">Notre-Dame-de-la-Garde</h2>
+        </article>
+      </div>
+
+        </section>
         </div>
+
+
       </main>
       <footer></footer>
     </div>
