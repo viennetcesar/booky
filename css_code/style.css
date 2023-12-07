@@ -450,7 +450,7 @@ a {
 .titre-h2-carte{
   margin: 0px;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   margin-left: 10px;
   font-size: 16px;
   font-weight: bold;
@@ -463,7 +463,7 @@ a {
   margin-bottom: 8px;
 }
 
-.carte-notes{
+.card-rating{
   display: flex;
   height:  20px;
   margin-top: 4px;
@@ -474,10 +474,10 @@ a {
 
 
 .afficher-plus{
-  font-style: 18px;
+  font-size: 18px;
   font-weight: Bold;
   margin-left: 25px;
-  margin-bottom: 5px;;
+  margin-bottom: 5px;
 
 }
 
@@ -546,11 +546,14 @@ a {
 .populaires-cards .card-content {
   width: 67%;
   height: 146px;
-  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+.card-txt{
+  margin-left: 10px;
 }
 
 .populaires-cards .card-title {
@@ -562,9 +565,9 @@ a {
   margin: 0;
 }
 
-.populaires-cards .card-rating {
-  margin-bottom: 10px;
-}
+
+
+
 
 /********************************* fin section populaires *******************************************/
 
@@ -596,7 +599,7 @@ a {
 
 
 .titre-activites-a-marseille{
-  font-size: 22;
+  font-size: 22px;
   font-weight: Bold;
   margin-bottom: 30px;
   margin-left: 30px;
@@ -633,6 +636,38 @@ a {
   margin-left: 19px;
   margin-top: 18px;
  
+}
+
+/*************************************************** footer *******************************************************/
+
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  height: 163px;
+}
+
+.foot{
+  width: 446px;
+}
+
+.foot-h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 20px;
+ 
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+li{
+  margin-bottom: 10px;
 }
 
 
