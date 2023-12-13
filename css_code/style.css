@@ -5,14 +5,13 @@
     font-family: "Ephesis";
     src: url("../Ephesis/Ephesis-Regular.ttf");
 }
-
-body{
-    font-family: "Ephesis", cursive;
-}
 */
+
+
 
 * {
   font-family: "Raleway", sans-serif;
+  padding: 0px;
 }
 
 .entete{
@@ -296,7 +295,7 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -717,29 +716,10 @@ li{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-  body{
+  
+  html, body{
     width: 100%;
-    /*
-    width: 375px;
-    height: 3982px;
-    */
   }
-
-  .bouton-rechercher {
-    display: none;
-  }
-  .loupe {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 49px;
-    height: 49px;
-    border-radius: 15px;
-    background-color: #0065fc;
-    box-shadow: 0px 5px 3px #deebff;
-  }
-  /* ... */
 
   .entete{
   display: flex;
@@ -770,6 +750,7 @@ li{
     border: 1px solid red;
   }
 
+  /*Formulaire de recherche*/
 
   .conteneur-recherche {
     width: 100%;  
@@ -778,6 +759,123 @@ li{
   .partie-recherche{
     width: 100%;
   }
+
+  .rectangle-plan {
+    width: 18%;
+  }
+
+  .bouton-rechercher {
+    display: none;
+  }
+
+  .loupe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    height: 49px;
+    border-radius: 15px;
+    background-color: #0065fc;
+    box-shadow: 0px 5px 3px #deebff;
+  }
+
+  form{
+    width: 64%;
+  }
+
+  .champ-recherche{
+    width: 100%;
+  }
+
+
+  .recherche-et-filtres {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conteneur-parent-filtres{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filter-boutons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px;
+  margin-bottom: 35px;
+  }
+
+  .bouton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+    height: 50px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 3px solid #f2f2f2;
+    
+  }
+
+  .icones-filtres{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .ecriture-bouton {
+    width: 100%;
+    padding-left: 2%;
+  }
+
+  .economique {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #f2f2f2;
+   
+  }
+
+  .familial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #f2f2f2;
+    margin-right: 0px;
+  } 
+
+  .romantique {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #f2f2f2;
+  }
+
+  .nos-pepites {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #f2f2f2;
+    margin-right: 0px;
+  }
+ 
+
+
+  .conteneur-infobar{
+    display: flex;
+    height: 38px;
+    margin-top: 120px;
+  }
+
+  
 
   /* dans hébergement */
   .division-cartes{
@@ -816,57 +914,6 @@ li{
     border-top-style: none;
   }
 
-  .recherche-et-filtres {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid violet;
-  }
-
-  .conteneur-parent-filtres{
-    flex-direction: column;
-    width: 100%;
-    border: 1px dashed green;
-  }
-
-  .filter-boutons{
-  width: 100%;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0px;
-  margin-bottom: 35px;
-  }
-
-  .bouton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 40%;
-    height: 50px;
-    margin: 10px;
-    border-radius: 30px;
-    border: 3px solid #f2f2f2;
-    
-  }
-  
-  .icones-filtres{
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
-  .ecriture-bouton {
-    padding-left: 2%;
-    padding-right: 20%;
-  }
-
-  .conteneur-infobar{
-    display: flex;
-    height: 38px;
-    margin-top: 120px;
-  }
-
   .conteneur-hebergements-et-populaires{
     display: flex;
     flex-direction: column-reverse;
@@ -878,7 +925,6 @@ li{
 
   .populaires{
     width: 100%;
-    /*width: 375px;*/
     margin-bottom: 15px;
   }
 
@@ -902,7 +948,6 @@ li{
   .populaires-cards .card {
     display: flex;
     flex-direction: row;
-    /*margin-top: 25px;*/
     justify-content: center;
     width: 100%;
     height: 146px;
@@ -939,7 +984,6 @@ li{
     display: flex;
     flex-direction: colmun;
     align-items: center;
-    /*width: 375px;*/
     width: 100%;
     margin-bottom: 150px;
   }
@@ -954,23 +998,18 @@ li{
   }
 
   .carte-photo-marseille{
-
     width: 100%;
     height: 20%;
     margin-bottom: 15px;
-    /*width: 315px;*/
  }
 
- .carte-photo-marseille img{
-  height: 75%;
- } 
+  .carte-photo-marseille img{
+    height: 75%;
+  } 
 
-
-  /*reprendre à partir d'ici car fonctionne pas*/
 
   .carte-photo-marseille{
     width: 100%;
-    /*width: 315px;*/
     height: 141px;
     border-radius: 20px;
     box-sizing: border-box;
