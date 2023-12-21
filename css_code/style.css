@@ -870,6 +870,8 @@ li {
   .trouvez-votre-hebergement {
     padding-left: 0px;
     padding-right: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .ville-nature {
@@ -922,6 +924,13 @@ li {
   .recherche-et-filtres {
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .fil{
+    margin-top: 0px;
+    margin-left: 3px;
   }
 
   .conteneur-parent-filtres {
@@ -1051,7 +1060,7 @@ li {
   .graphique{
     margin-right: 25px;
   }
-  
+
   .populaires-cards {
     width: 90%;
     height: 529px;
