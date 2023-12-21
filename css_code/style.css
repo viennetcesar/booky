@@ -632,9 +632,37 @@ li {
 
 @media (min-width: 1441px){
   body{
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 230px;
+    margin-right: 230px;
   }
+
+  .conteneur-hebergements-et-populaires{
+    width: 100%;
+  }
+
+  .hebergements {
+    width: 72%;
+  }
+
+.hebergements-and-populaires{
+  width: 100%;
+}
+
+.division-cartes{
+  width: 100%;
+  margin: 0px;
+}
+
+.division-cartes a{
+  width: 30%;
+}
+
+.boite-carte {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 }
 
 
@@ -772,8 +800,8 @@ li {
 
   body {
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .entete {
@@ -980,7 +1008,7 @@ li {
   .division-cartes {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 96%;
     border-radius: 15px;
     margin-bottom: 0px;
     padding: 0%;
@@ -988,7 +1016,8 @@ li {
 
   .division-cartes a{
     width: 100%;
-    margin-left: 8px;
+    margin-left: 15px;
+  
   }
 
   .conteneur-hebergements-et-populaires {
@@ -1015,6 +1044,14 @@ li {
     width: 100%;
   }
 
+  .section-title{
+    margin-left: 25px;
+  }
+
+  .graphique{
+    margin-right: 25px;
+  }
+  
   .populaires-cards {
     width: 90%;
     height: 529px;
@@ -1077,8 +1114,9 @@ li {
   }
 
   .titre-activites-a-marseille {
+    width: 80%;
     margin: 0px;
-    margin-left: 5%;
+    margin-left: 0px;
     margin-bottom: 30px;
   }
 
@@ -1105,7 +1143,7 @@ li {
   }
 
   .afficher-plus{
-    margin-left: 5%;
+    width: 80%;
   }
 
   footer {
@@ -1113,7 +1151,12 @@ li {
     flex-direction: column;
     background-color: #f2f2f2;
     height: 461px;
-    padding-left: 20px;
+    width: 100%;
     padding-top: 10px;
   }
+
+  .foot{
+    width: 100%;
+  }
+
 }
