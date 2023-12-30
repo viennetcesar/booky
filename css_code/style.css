@@ -1,26 +1,15 @@
-/****** Général ***********/
-
-/*
-@font-face {
-    font-family: "Ephesis";
-    src: url("../Ephesis/Ephesis-Regular.ttf");
+* {
+  font-family: "Raleway", sans-serif;
+  padding: 0px;
 }
-*/
-/*
-html{
-  width: 1440px;
-}*/
 
 body {
   display: flex;
   justify-content: center;
   margin-left: 50px;
   margin-right: 50px;
-}
-
-* {
-  font-family: "Raleway", sans-serif;
-  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .entete {
@@ -97,7 +86,6 @@ body {
 .partie-recherche {
   display: flex;
   flex-direction: row;
-  /*border: 2px solid pink;*/
   margin-top: 15px;
   margin-bottom: 35px;
 }
@@ -152,10 +140,8 @@ input::placeholder {
 form {
   display: flex;
   flex-direction: row;
-  /*flexibiliser les éléments pour pouvoir les coller sans espace entre eux*/
 }
 
-/****************************filtres CSS******************************/
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -165,9 +151,6 @@ form {
 .fa-solid {
   color: var(--main-color);
 }
-/****************************filtres CSS*******************************/
-
-/**************************************************** Barre de filtres ***********************************************/
 
 .recherche-et-filtres {
   display: flex;
@@ -180,7 +163,6 @@ form {
   justify-content: flex-start;
   width: 800px;
   height: 50px;
-  /*border: 2px solid blue;*/
   margin: 0px;
   margin-bottom: 35px;
 }
@@ -194,7 +176,6 @@ form {
 .fil {
   font-weight: bold;
   font-size: 18px;
-  /*border: 2px solid black;*/
   width: 54px;
   height: 21px;
   margin-right: 10px;
@@ -205,7 +186,7 @@ form {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 30px; /*la valeur sur la maquette est 25px mais pas ressemblant*/
+  border-radius: 30px; 
   border: 3px solid #f2f2f2;
   margin-left: 9px;
   margin-right: 9px;
@@ -270,7 +251,6 @@ form {
 }
 
 .info {
-  /*j'élimine le padding de base d'un paragraphe ainsi que le margin de base crée entre <p> et le conteneur flex*/
   padding: 0px;
   margin: 0px;
   margin-left: 4px;
@@ -282,10 +262,6 @@ form {
   margin-bottom: 0px;
   margin-right: 3px;
 }
-
-/*********************************************************************************************************************/
-
-
 
 .main-container {
   width: 100%;
@@ -332,7 +308,6 @@ a {
 }
 
 .conteneur-hebergements-et-populaires {
-  /*border: 2px solid orange;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -356,7 +331,7 @@ a {
 .hebergements {
   display: flex;
   flex-direction: column;
-  width: 64%; 
+  width: 64%;
   height: 614px;
   background-color: #f2f2f2;
 
@@ -381,7 +356,7 @@ a {
   margin-bottom: 0px;
 }
 
-.division-cartes a{
+.division-cartes a {
   width: 27.5%;
   margin-left: 2%;
   margin-right: 3%;
@@ -454,7 +429,7 @@ a {
   margin-bottom: 5px;
 }
 
-.afficher-plus p{
+.afficher-plus p {
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -463,7 +438,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 32%; /*le % s'adapte mieux que*/
+  width: 32%; 
   height: 614px;
   background-color: #f2f2f2;
   border-radius: 15px;
@@ -499,7 +474,7 @@ a {
   margin: 20px;
 }
 
-.populaires-cards a{
+.populaires-cards a {
   width: 90%;
 }
 
@@ -623,15 +598,15 @@ li {
   margin-bottom: 10px;
 }
 
-/****** Large Desktop ***********/
+/******************************************************************** Large Desktop *****************************************************************/
 
-@media (min-width: 1441px){
-  body{
+@media (min-width: 1441px) {
+  body {
     margin-left: 230px;
     margin-right: 230px;
   }
 
-  .conteneur-hebergements-et-populaires{
+  .conteneur-hebergements-et-populaires {
     width: 100%;
   }
 
@@ -639,49 +614,45 @@ li {
     width: 72%;
   }
 
-.hebergements-and-populaires{
-  width: 100%;
+  .hebergements-and-populaires {
+    width: 100%;
+  }
+
+  .division-cartes {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .division-cartes a {
+    width: 27.5%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-bottom: 28px;
+  }
+
+  .boite-carte {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .populaires {
+    width: 28%;
+    margin-left: 30px;
+  }
+
+  .populaires-title {
+    width: 100%;
+  }
 }
 
-.division-cartes{
-  width: 100%;
-  margin: 0px;
-}
-
-.division-cartes a {
-  width: 27.5%;
-  margin-left: 2%;
-  margin-right: 3%;
-  margin-bottom: 28px;
-}
-
-.boite-carte {
-  width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.populaires{
-  width: 28%;
-  margin-left: 30px;
-}
-
-.populaires-title{
-  width: 100%;
-}
-
-}
-
-
-
-/* Medium devices (tablets, less/equal than 1024px) */
+/****************************************************************** Tablette ***********************************************************************/
 @media (max-width: 1024px) {
-
-  html{
+  html {
     width: 1024px;
   }
 
-  body{
+  body {
     width: 1024px;
   }
 
@@ -691,15 +662,14 @@ li {
 
   .division-cartes {
     width: 100%;
-  
-}
+  }
 
-  .division-cartes a{
+  .division-cartes a {
     width: 28%;
     margin-right: 10px;
   }
 
-  .boite-carte{
+  .boite-carte {
     width: 100%;
     margin-right: 0px;
     margin-left: 0px;
@@ -712,10 +682,9 @@ li {
     padding-right: 0px;
   }
 
-  .hebergements-and-populaires{
+  .hebergements-and-populaires {
     width: 100%;
   }
-
 
   .populaires {
     display: flex;
@@ -726,20 +695,20 @@ li {
     margin-top: 50px;
   }
 
-  .populaires-title{
+  .populaires-title {
     width: 100%;
     margin-top: 15px;
   }
 
-.section-title {
-  margin-top: 17px;
-  margin-left: 35px;
-}
+  .section-title {
+    margin-top: 17px;
+    margin-left: 35px;
+  }
 
-.graphique {
-  margin-top: 22px;
-  margin-right: 35px;
-}
+  .graphique {
+    margin-top: 22px;
+    margin-right: 35px;
+  }
 
   .populaires-cards {
     width: 100%;
@@ -768,13 +737,13 @@ li {
     font-size: 13px;
   }
 
-  .titre-activites-a-marseille{
+  .titre-activites-a-marseille {
     width: 100%;
     margin-right: 0px;
     padding-left: 20px;
   }
 
-  .conteneur-activites-a-marseille{
+  .conteneur-activites-a-marseille {
     width: 100%;
     height: 390px;
   }
@@ -789,19 +758,16 @@ li {
     height: 270px;
     margin-right: 30px;
     margin-left: 20px;
+  }
+
+  .carte-photo-marseille img {
+    height: 80%;
+  }
 }
 
-.carte-photo-marseille img {
-  height: 80%;
-}
-
-}
-
-
-/* Small devices (phones, less than 768px) */
+/********************************************************************** Téléphones *****************************************************************/
 @media (max-width: 767.98px) {
-  
-  html{
+  html {
     width: 100%;
   }
 
@@ -886,8 +852,6 @@ li {
     margin-bottom: 35px;
   }
 
-  /*Formulaire de recherche*/
-
   .recherche-et-filtres {
     padding-left: 0px;
     padding-right: 0px;
@@ -936,7 +900,7 @@ li {
     margin-right: 15px;
   }
 
-  .fil{
+  .fil {
     margin-top: 0px;
     margin-left: 3px;
   }
@@ -1021,7 +985,6 @@ li {
     margin-bottom: 0px;
   }
 
-  /* dans hébergement */
   .division-cartes {
     display: flex;
     flex-direction: column;
@@ -1031,11 +994,10 @@ li {
     padding: 0%;
   }
 
-  .division-cartes a{
+  .division-cartes a {
     width: 98%;
     margin-left: 10px;
     margin-right: 0px;
-  
   }
 
   .conteneur-hebergements-et-populaires {
@@ -1062,11 +1024,11 @@ li {
     width: 100%;
   }
 
-  .section-title{
+  .section-title {
     margin-left: 25px;
   }
 
-  .graphique{
+  .graphique {
     margin-right: 25px;
   }
 
@@ -1110,10 +1072,9 @@ li {
     width: 100%;
   }
 
-
   .conteneur-activites-a-marseille {
     display: flex;
-    flex-direction: colmun;
+    flex-direction: column;
     align-items: start;
     height: 950px;
     width: 100%;
@@ -1159,7 +1120,7 @@ li {
     margin-left: 0px;
   }
 
-  .afficher-plus{
+  .afficher-plus {
     width: 80%;
   }
 
@@ -1170,15 +1131,16 @@ li {
     padding-top: 10px;
   }
 
-  .foot{
+  .foot {
     width: 100%;
     background-color: #f2f2f2;
   }
-
 }
 
+/******************************************************** écriture boutons pour ne pas dépasser jusqu'à 320px ********************************************************/
+
 @media (max-width: 356px) {
-  .ecriture-bouton{
+  .ecriture-bouton {
     width: 100%;
     padding: 0px;
   }
