@@ -988,16 +988,19 @@ li {
   .division-cartes {
     display: flex;
     flex-direction: column;
-    width: 96%;
+    width: 90%;
     border-radius: 15px;
     margin-bottom: 0px;
+    margin-left: 4%;
     padding: 0%;
   }
 
   .division-cartes a {
-    width: 98%;
-    margin-left: 10px;
+    width: 95%;
+    margin-left: 3%;
     margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 3%;
   }
 
   .conteneur-hebergements-et-populaires {
@@ -1056,9 +1059,9 @@ li {
   }
 
   .boite-carte {
-    width: 90%;
+    width: 100%;
     margin: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
 
   .hebergements {
@@ -1122,6 +1125,7 @@ li {
 
   .afficher-plus {
     width: 80%;
+    margin-left: 6%;
   }
 
   footer {
